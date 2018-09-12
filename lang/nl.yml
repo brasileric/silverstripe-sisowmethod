@@ -1,0 +1,10 @@
+nl:
+  SisowMethod:
+    METHODKEY: 'Methode sleutel'
+    METHODTITLE: 'Methode titel'
+    METHODTITLE_DESCRIPTION: 'De methode titel verschijnt op de website.'
+    ENABLED: 'Ingeschakeld'
+    PAYMENT_METHOD: 'Betaalmethode'
+    SELECT_BANK: 'Selecteer een bank'
+    CHOOSE_YOUR_BANK: 'Kies de bank voor iDEAL'
+    CHOOSE_PAYMENT_METHOD: 'Kies de gewenste betaalmethode'

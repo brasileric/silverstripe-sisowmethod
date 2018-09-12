@@ -1,0 +1,29 @@
+{
+	"name": "hestec/silverstripe-sisowmethod",
+	"description": "Sisow extension for the SilverStripe Omnipay module",
+	"type": "silverstripe-vendormodule",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe","payment", "sisow", "ideal", "mistercash", "sofort", "giropay", "webshop gift card", "wire transfer", "podium gift card", "podium cadeaukaart", "mastercard", "visa", "visacard", "maestro", "eps", "ing home pay", "vvv gift card", "focum", "klarna", "paypal", "bancontact", "sepa", "iban"],
+	"authors": [
+		{
+			"name": "Eric Hes",
+			"homepage": "http://www.hestec.nl",
+			"role": "Developer"
+		}
+	],
+  "support": {
+    "issues": "https://github.com/brasileric/silverstripe-sisowmethod/issues"
+  },
+	"require": {
+		"silverstripe/framework": ">=4.0",
+		"silverstripe/cms": ">=4.0",
+		"silverstripe/silverstripe-omnipay": "3.*",
+		"hestec/omnipay-sisow": "1.*"
+	},
+	"extra": {
+		"expose": [
+			"client"
+		],
+		"installer-name": "sisowmethod"
+	}
+}

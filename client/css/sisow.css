@@ -1,0 +1,12 @@
+.show-ideal-banks {
+    display: none;
+}
+
+.optionset-gateway ul {
+    list-style: none;
+    padding: 0;
+}
+
+.optionset-gateway ul li img {
+    margin-right: 10px;
+}

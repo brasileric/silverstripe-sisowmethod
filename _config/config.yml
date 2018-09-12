@@ -1,0 +1,10 @@
+---
+name: sisow-methods
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Hestec\SisowMethod\SisowSiteConfig
+
+#SilverStripe\Omnipay\Service\PaymentService:
+#  extensions:
+#    - Hestec\SisowMethod\SisowGatewayUpdate
