@@ -14,6 +14,7 @@ use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\Forms\GridField\GridFieldDetailForm;
 use SilverStripe\Forms\GridField\GridFieldFilterHeader;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
+use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Security\Permission;
@@ -31,17 +32,17 @@ class SisowSiteConfig extends DataExtension {
             'SisowMethods',
             _t("SiteConfig.SISOWMETHODS", "Sisow Methods"),
             $this->owner->SisowMethods(),
-            GridFieldConfig::create()
-                ->addComponent(new GridFieldToolbarHeader())
+            GridFieldConfig_RecordEditor::create()
+                /*->addComponent(new GridFieldToolbarHeader())
                 ->addComponent(new GridFieldAddNewButton("toolbar-header-right"))
                 ->addComponent(new GridFieldSortableHeader())
-                ->addComponent(new GridFieldDataColumns())
+                //->addComponent(new GridFieldDataColumns())
                 ->addComponent(new GridFieldPaginator(50))
                 ->addComponent(new GridFieldEditButton())
                 ->addComponent(new GridFieldDeleteAction())
                 ->addComponent(new GridFieldDetailForm())
                 ->addComponent(new GridFieldFilterHeader())
-                ->addComponent(new GridFieldOrderableRows('SortOrder'))
+                ->addComponent(new GridFieldOrderableRows('SortOrder'))*/
         );
 
         if (Permission::check('ADMIN')) {
